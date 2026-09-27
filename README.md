@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project demonstrates the **Hashing Division Method** using Python.
+This project demonstrates the **Hashing Division Method** using C.
 
 Hashing is used to store and search data efficiently by mapping a key to an index in a hash table.
 
