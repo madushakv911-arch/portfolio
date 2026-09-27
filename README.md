@@ -22,3 +22,15 @@ In this project:
 ```text
 Hash table size = 10
 Hash function = k % 10
+## 🔹 Collision Handling
+
+Collisions are handled using **Linear Probing**.
+
+If the calculated hash position is already occupied, the next available position is checked until an empty position is found.
+## 🔹 Load Factor
+
+Load Factor = Number of elements / Hash table size
+
+= 8 / 10
+
+= 0.8 (80%)
