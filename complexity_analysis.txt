@@ -1,0 +1,48 @@
+Q7 – Hashing Using Division Method
+Complexity Analysis
+
+1. Hashing – Division Method
+
+Hash function:
+h(key) = key % table_size
+
+Insertion:
+Average Case: O(1)
+Worst Case: O(n) due to collisions and linear probing.
+
+Search:
+Average Case: O(1)
+Worst Case: O(n) when many collisions occur.
+
+Space Complexity:
+O(n), where n is the number of stored elements.
+
+2. Linear Search
+
+Best Case: O(1)
+Average Case: O(n)
+Worst Case: O(n)
+
+Space Complexity:
+O(1)
+
+3. Load Factor
+
+Load Factor = Number of elements / Hash table size
+
+= 8 / 10
+= 0.8
+
+Therefore, the load factor is 0.8 or 80%.
+
+4. Comparison
+
+Hashing provides faster average search performance than linear search.
+However, collisions increase the number of comparisons.
+Linear probing resolves collisions by checking the next available position.
+
+5. Conclusion
+
+Hashing using the Division Method is suitable for storing and searching
+song IDs because it provides O(1) average-case search performance.
+However, a high load factor and collisions can reduce performance.
