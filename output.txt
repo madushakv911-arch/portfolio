@@ -1,0 +1,229 @@
+DATA STRUCTURES AND ALGORITHMS - ASSIGNMENT 2
+Question 7 - Hashing using Division Method
+Roll No: 34
+
+Song IDs:
+105 210 315 420 525 630 735 840 
+
+========== INSERTION ==========
+
+Inserting 105
+Hash index = 5
+Inserted 105 at index 5
+
+-----------------------------
+       HASH TABLE
+-----------------------------
+Index	Value
+0	EMPTY
+1	EMPTY
+2	EMPTY
+3	EMPTY
+4	EMPTY
+5	105
+6	EMPTY
+7	EMPTY
+8	EMPTY
+9	EMPTY
+-----------------------------
+
+Inserting 210
+Hash index = 0
+Inserted 210 at index 0
+
+-----------------------------
+       HASH TABLE
+-----------------------------
+Index	Value
+0	210
+1	EMPTY
+2	EMPTY
+3	EMPTY
+4	EMPTY
+5	105
+6	EMPTY
+7	EMPTY
+8	EMPTY
+9	EMPTY
+-----------------------------
+
+Inserting 315
+Hash index = 5
+Collision at index 5
+Inserted 315 at index 6
+
+-----------------------------
+       HASH TABLE
+-----------------------------
+Index	Value
+0	210
+1	EMPTY
+2	EMPTY
+3	EMPTY
+4	EMPTY
+5	105
+6	315
+7	EMPTY
+8	EMPTY
+9	EMPTY
+-----------------------------
+
+Inserting 420
+Hash index = 0
+Collision at index 0
+Inserted 420 at index 1
+
+-----------------------------
+       HASH TABLE
+-----------------------------
+Index	Value
+0	210
+1	420
+2	EMPTY
+3	EMPTY
+4	EMPTY
+5	105
+6	315
+7	EMPTY
+8	EMPTY
+9	EMPTY
+-----------------------------
+
+Inserting 525
+Hash index = 5
+Collision at index 5
+Collision at index 6
+Inserted 525 at index 7
+
+-----------------------------
+       HASH TABLE
+-----------------------------
+Index	Value
+0	210
+1	420
+2	EMPTY
+3	EMPTY
+4	EMPTY
+5	105
+6	315
+7	525
+8	EMPTY
+9	EMPTY
+-----------------------------
+
+Inserting 630
+Hash index = 0
+Collision at index 0
+Collision at index 1
+Inserted 630 at index 2
+
+-----------------------------
+       HASH TABLE
+-----------------------------
+Index	Value
+0	210
+1	420
+2	630
+3	EMPTY
+4	EMPTY
+5	105
+6	315
+7	525
+8	EMPTY
+9	EMPTY
+-----------------------------
+
+Inserting 735
+Hash index = 5
+Collision at index 5
+Collision at index 6
+Collision at index 7
+Inserted 735 at index 8
+
+-----------------------------
+       HASH TABLE
+-----------------------------
+Index	Value
+0	210
+1	420
+2	630
+3	EMPTY
+4	EMPTY
+5	105
+6	315
+7	525
+8	735
+9	EMPTY
+-----------------------------
+
+Inserting 840
+Hash index = 0
+Collision at index 0
+Collision at index 1
+Collision at index 2
+Inserted 840 at index 3
+
+-----------------------------
+       HASH TABLE
+-----------------------------
+Index	Value
+0	210
+1	420
+2	630
+3	840
+4	EMPTY
+5	105
+6	315
+7	525
+8	735
+9	EMPTY
+-----------------------------
+
+========== FINAL HASH TABLE ==========
+
+-----------------------------
+       HASH TABLE
+-----------------------------
+Index	Value
+0	210
+1	420
+2	630
+3	840
+4	EMPTY
+5	105
+6	315
+7	525
+8	735
+9	EMPTY
+-----------------------------
+
+========== SEARCH COMPARISON ==========
+
+Searching for 105
+Hashing: Found at index 5, Comparisons = 1
+Linear Search: Found at array index 0, Comparisons = 1
+
+Searching for 525
+Hashing: Found at index 7, Comparisons = 3
+Linear Search: Found at array index 4, Comparisons = 5
+
+Searching for 840
+Hashing: Found at index 3, Comparisons = 4
+Linear Search: Found at array index 7, Comparisons = 8
+
+Searching for 999
+Hashing: Not Found, Comparisons = 0
+Linear Search: Not Found, Comparisons = 8
+
+========== ANALYSIS ==========
+Number of elements = 8
+Hash table size = 10
+Load factor = 8/10 = 0.80
+
+Hash Function: h(k) = k % 10
+
+Average Hashing Search Complexity: O(1)
+Worst-case Hashing Search Complexity: O(n)
+Linear Search Complexity: O(n)
+
+Space Complexity of Hash Table: O(m)
